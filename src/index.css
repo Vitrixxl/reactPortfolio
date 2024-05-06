@@ -19,15 +19,22 @@ body {
 }
 
 .scrollIcon{
-    animation : scrollingIcon 2s infinite;
+    animation : scrollingIcon 1.5s infinite;
 
 }
 
 @keyframes scrollingIcon {
     80%{
-        margin-top:3rem;
+        margin-top:1rem;
     }
     100%{
         margin-top:0px;
     }
+}
+.selfCaption{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2; /* Nombre de lignes à afficher avant d'appliquer l'ellipse */
+    text-overflow: ellipsis;
 }

@@ -84,20 +84,17 @@ export default function Footer() {
                             91940 Les Ulis <br />
                             FRANCE
                         </p>
+                        <p className="font-p text-white-dark opacity-70 text-xs font-light my-1">
+                            © Créé par .VSXplore 
+                        </p>
                     </div>
                     <div className="w-full grid grid-cols-3 gap-2">
-                        {footerLinkSection.map(section=>{
+                        {footerLinkSection.map((section, index)=>{
                             console.log(section)
                             return(
-                                <FooterLink title={section.title} align={section.align} links={section.links}/>
+                                <FooterLink key={index} title={section.title} align={section.align} links={section.links}/>
                             )
                         })}
-                        {/* <div className="w-full flex flex-col gap-2 text-left px-10">
-                            <h2 className="text-white-default font-bold text-base">
-                                A propos
-                            </h2>
-
-                        </div> */}
                     </div>
 
 

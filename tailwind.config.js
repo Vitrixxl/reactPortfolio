@@ -47,7 +47,7 @@ export default {
 
       },
       footer:{
-        default :"#2D033B"
+        default :"#0e0818"
       },
       purple:{
         lightest :"#E0AAFF",
