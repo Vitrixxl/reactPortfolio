@@ -20,14 +20,14 @@ export default function SelfComponent() {
             <motion.div layoutId={"selfCard"} className="bg-gradient-to-tl  from-purple-lightest via-purple-default to-purple-dark p-px rounded ">
 
                 <motion.div className="bg-footer-default p-4 rounded">
-                    <motion.div className="text-start flex-root">
+                    <div className="text-start flex-root">
 
                         <motion.a href="https://www.linkedin.com/in/vitrice-cascales-b15039276/" className="hover:bg-gray-700 hover:bg-opacity-30 p-4 transition-all duration-200 flex flex-row rounded">
                             <motion.img src="" alt="" />
                             <motion.h3 layout={"position"} layoutId={"selfTitle"} className="text-white-light font-p my-0 text-b font-semibold">Cascale Vitrice</motion.h3>
 
                         </motion.a>
-                    </motion.div>
+                    </div>
                     <motion.div className=" pt-4 border-t border-solid border-white-dark mt-4">
                         <motion.div className="hover:bg-gray-700 hover:bg-opacity-30 transition-all duration-200 p-4 rounded-md cursor-pointer " onClick={toggleOpen}>
                             <motion.p layoutId={"subTitle"} className="text-white-dark text-sm text-start selfCaption ">
@@ -35,9 +35,6 @@ export default function SelfComponent() {
                             </motion.p>
                             <motion.p className="text-end text-purple-default pt-4 font-t cursor-pointer underline">Voir plus ...</motion.p>
                         </motion.div>
-
-                    </motion.div>
-                    <motion.div className="text-end">
 
                     </motion.div>
                 </motion.div>

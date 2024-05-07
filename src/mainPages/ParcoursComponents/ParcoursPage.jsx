@@ -3,13 +3,14 @@ import { motion } from "framer-motion"
 import ParcoursHeader from "./ParcoursHeader"
 import SelfComponent from "./SelfComponent"
 import ParcoursCard from "./ParcoursCard"
+import { ParcoursCardContent } from "./ParcoursCardContent.jsx"
 const pageVariant = {
     "initial": { opacity: 0, y: 300 },
     "animate": { opacity: 1, y: 0 },
     "exit": { opacity: 0, y: -300 },
     "transition": { duration: 0.5 }
 }
-
+let right = false
 export default function ParcoursPage() {
     return (
         <motion.div className="min-h-screen"
@@ -27,10 +28,10 @@ export default function ParcoursPage() {
                     </div> */}
                     <div className="col-span-12 lg:col-span-8 min-h-screen">
                         <div className="w-full flex flex-col gap-8">
-                            <ParcoursCard right={true}/>
-                            <ParcoursCard right={false}/>
-                            <ParcoursCard right={true}/>
-
+                            {ParcoursCardContent.map((content,index) => (
+                                
+                                <ParcoursCard content={content} right={index % 2 === 0} />
+                            ))}
                         </div>
                     </div>
                     <div className="hidden lg:block col-span-4">
