@@ -37,13 +37,13 @@ body {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     /* Nombre de lignes à afficher avant d'appliquer l'ellipse */
     text-overflow: ellipsis;
 }
 
 
-
+/* 
 .ParcoursCard::before {
     position: absolute;
     transform: rotate(45deg) translate(-60px, 43px);
@@ -54,4 +54,4 @@ body {
     content: "";
   
     background : linear-gradient(90deg, rgba(224,170,255,1) 0%, rgba(157,78,221,1) 50%, rgba(123,44,191,1) 100%);
-}
+} */

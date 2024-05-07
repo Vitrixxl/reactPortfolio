@@ -2,7 +2,7 @@ import React from "react"
 import { motion } from "framer-motion"
 import ParcoursHeader from "./ParcoursHeader"
 import SelfComponent from "./SelfComponent"
-import ParcoursList from "./ParcoursList"
+import ParcoursCard from "./ParcoursCard"
 const pageVariant = {
     "initial": { opacity: 0, y: 300 },
     "animate": { opacity: 1, y: 0 },
@@ -26,7 +26,12 @@ export default function ParcoursPage() {
 
                     </div> */}
                     <div className="col-span-12 lg:col-span-8 min-h-screen">
-                        <ParcoursList/>
+                        <div className="w-full flex flex-col gap-8">
+                            <ParcoursCard right={true}/>
+                            <ParcoursCard right={false}/>
+                            <ParcoursCard right={true}/>
+
+                        </div>
                     </div>
                     <div className="hidden lg:block col-span-4">
                         <SelfComponent />
