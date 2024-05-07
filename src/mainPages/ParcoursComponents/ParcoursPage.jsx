@@ -21,14 +21,14 @@ export default function ParcoursPage() {
         >
             <ParcoursHeader />
             <div className="pt-14 text-center">
-                <div className="max-w-6xl m-auto grid grid-cols-12 px-4 sm:px-6 gap-8">
+                <div className="max-w-3xl  lg:max-w-6xl m-auto grid grid-cols-12 px-4 sm:px-6 gap-8">
                     {/* <div className="bg-white-default col-span-4">
 
                     </div> */}
-                    <div className=" col-span-8 min-h-screen">
+                    <div className="col-span-12 lg:col-span-8 min-h-screen">
                         <ParcoursList/>
                     </div>
-                    <div className="col-span-4">
+                    <div className="hidden lg:block col-span-4">
                         <SelfComponent />
                     </div>
                 </div>
