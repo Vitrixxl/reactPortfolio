@@ -18,23 +18,40 @@ body {
     font-family: "Cabin", sans-serif;
 }
 
-.scrollIcon{
-    animation : scrollingIcon 1.5s infinite;
+.scrollIcon {
+    animation: scrollingIcon 1.5s infinite;
 
 }
 
 @keyframes scrollingIcon {
-    80%{
-        margin-top:1rem;
+    80% {
+        margin-top: 1rem;
     }
-    100%{
-        margin-top:0px;
+
+    100% {
+        margin-top: 0px;
     }
 }
-.selfCaption{
+
+.selfCaption {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    -webkit-line-clamp: 2; /* Nombre de lignes à afficher avant d'appliquer l'ellipse */
+    -webkit-line-clamp: 2;
+    /* Nombre de lignes à afficher avant d'appliquer l'ellipse */
     text-overflow: ellipsis;
+}
+
+
+
+.ParcoursCard::before {
+    position: absolute;
+    transform: rotate(45deg) translate(-60px, 43px);
+    z-index: 0;
+    display: block;
+    width: 2px;
+    height:200px;
+    content: "";
+  
+    background : linear-gradient(90deg, rgba(224,170,255,1) 0%, rgba(157,78,221,1) 50%, rgba(123,44,191,1) 100%);
 }

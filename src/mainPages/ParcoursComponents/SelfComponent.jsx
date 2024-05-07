@@ -15,16 +15,17 @@ export default function SelfComponent() {
         }
     }
     const caption = "Dynamique, curieux et passioné, j'ai toujours aimé la technologie et de fait le developpement. Durant mon ma formation (BTS SIO OPTION SLAM) j'ai developpé des competences"
-
     return (
         <motion.div className="sticky top-28">
             <motion.div layoutId={"selfCard"} className="bg-gradient-to-r from-purple-lightest via-purple-default to-purple-dark p-px rounded">
+
                 <motion.div className="bg-footer-default p-4 rounded">
                     <motion.div className="text-start flex-root">
 
                         <motion.a href="https://www.linkedin.com/in/vitrice-cascales-b15039276/" className="hover:bg-gray-700 hover:bg-opacity-30 p-4 transition-all duration-500 flex flex-row rounded">
                             <motion.img src="" alt="" />
-                            <MidP label={"Cascale Vitrice"} />
+                            <motion.h3 layout={"position"} layoutId={"selfTitle"} className="text-white-light font-p my-0 text-b font-semibold">Cascale Vitrice</motion.h3>
+
                         </motion.a>
                     </motion.div>
                     <motion.div className="text-start py-2 border-t border-solid border-white-dark mt-4 pt-4">
@@ -44,7 +45,7 @@ export default function SelfComponent() {
                 {
                     open && (
 
-                        <motion.div className="fixed h-screen w-screen top-0 left-0 flex justify-center items-center bg-gray-900 bg-opacity-70" id="bgSelfPopUp"
+                        <motion.div className="fixed h-screen w-screen top-0 left-0 flex justify-center items-center bg-gray-900 bg-opacity-70 " id="bgSelfPopUp"
 
                             ref={backgroundRef}
                             onClick={closePopUp}
@@ -55,10 +56,14 @@ export default function SelfComponent() {
 
 
                             <motion.div layoutId={"selfCard"} className=" relative max-w-2xl bg-gradient-to-r from-purple-lightest via-purple-default to-purple-dark p-px rounded">
+
                                 <motion.div className="bg-footer-default p-6 px-10 rounded">
                                     <motion.div className="flex justify-between">
                                         <motion.div className="text-start items-center flex gap-2 mt-0.5">
                                             <motion.img src="" alt="" />
+                                            <motion.p layout={"position"} layoutId={"selfTitle"} className="text-white-light font-p my-0 text-b font-semibold">
+
+                                            </motion.p>
                                             <BigP label={"Cascales Vitrice"} />
                                         </motion.div>
                                         <motion.div>
