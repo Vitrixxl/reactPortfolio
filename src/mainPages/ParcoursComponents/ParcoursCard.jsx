@@ -22,7 +22,7 @@ export default function ParcoursCard({ content, right }) {
                                 <p className="font-p font-normal text-white-light">{content.caption}</p>
                             </div>
                             <div className={"min-w-full "}>
-                                <NavLink to="/project" className={"mt-2 p-2 transition-all duration-200 rounded-sm flex hover:bg-gray-700 hover:bg-opacity-30 items-center" + (right ? "justify-start" : "justify-end")}>
+                                <NavLink to="/project" className={"mt-2 p-2 transition-all duration-200 rounded-sm flex hover:bg-gray-700 hover:bg-opacity-30 items-center " + (right ? "justify-start" : "justify-end")}>
                                     <LinearGradient className={"font-p text-sm  font-medium flex gap-2  " + (right ? "flex-row-reverse" : "")}
                                         gradient={[(right ? "to left" : "to right"), "#E0AAFF,#9D4EDD"]}
                                     >
