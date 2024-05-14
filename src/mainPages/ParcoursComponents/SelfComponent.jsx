@@ -5,15 +5,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { useToggle } from "@uidotdev/usehooks";
 import BigP from "../../font/BigP.jsx";
+import LinearGradientPurple from "../../font/LinearGradientPurple.jsx"
+import { NavLink } from "react-router-dom";
 export default function SelfComponent() {
     const backgroundRef = useRef(null);
     const [open, toggleOpen] = useToggle(false)
 
-    const closePopUp = (e) => {
-        if (e.target == backgroundRef.current) {
-            toggleOpen
-        }
-    }
+
     const caption = "Dynamique, curieux et passioné, j'ai toujours aimé la technologie et particulierement le developpement. Durant mon ma formation (BTS SIO OPTION SLAM) j'ai developpé des competences"
     return (
         <motion.div className="sticky top-28">
@@ -44,10 +42,10 @@ export default function SelfComponent() {
                 {
                     open && (
 
-                        <motion.div className="fixed h-screen w-screen top-0 left-0 flex justify-center items-center bg-gray-900 bg-opacity-70 " id="bgSelfPopUp"
+                        <motion.div className="fixed h-screen w-screen top-0 left-0 flex justify-center items-center bg-black bg-opacity-70 "
 
-                            ref={backgroundRef}
-                            onClick={closePopUp}
+                    
+                
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
@@ -74,31 +72,16 @@ export default function SelfComponent() {
                                         </motion.div>
                                     </motion.div>
                                     <motion.div>
-                                        <motion.p layoutId={"subTitle"} layout className="text-white-dark text-md mt-4 border-t border-solid border-gray-500 border-opacity-50 pt-6 pb-2">
-                                            <span className="font-p font-semibold   "
-                                                style={{
-                                                    background: "linear-gradient(to right, #E0AAFF 15%, #C77DFF 100%)",
-                                                    WebkitBackgroundClip: "text",
-                                                    WebkitTextFillColor: "transparent"
-                                                }}>Dynamique</span>,
-                                            <span className="font-p font-semibold   "
-                                                style={{
-                                                    background: "linear-gradient(to right, #E0AAFF 15%, #C77DFF 100%)",
-                                                    WebkitBackgroundClip: "text",
-                                                    WebkitTextFillColor: "transparent"
-                                                }}> curieux</span> et <span className="font-p font-semibold   "
-                                                    style={{
-                                                        background: "linear-gradient(to right, #E0AAFF 15%, #C77DFF 100%)",
-                                                        WebkitBackgroundClip: "text",
-                                                        WebkitTextFillColor: "transparent"
-                                                    }}>passioné</span>
-                                            , j'ai toujours aimé la technologie et de fait le developpement. Durant mon ma formation (BTS SIO option SLAM) j'ai developpé des competences dans divers languages de programmation mais aussi dans l'organisation et la conceptualisation du developpement. De plus la réalisation de projets personnels qui m'ont fait gagner en autonomie.
+                                        <motion.p layoutId={"subTitle"} layout className="text-white-dark text-start font-p text-md mt-4 border-t border-solid border-gray-500 border-opacity-50 pt-6 pb-2">
+                                            
+                                            <LinearGradientPurple label={"Dynamique"} className={"font-semibold font-p"}/>, <LinearGradientPurple label={"curieux"} className={"font-semibold font-p"}/>, et surtout  <LinearGradientPurple label={"passioné"} className={"font-semibold font-p"}/>, j'ai toujours aimé la technologie et de fait le developpement. Durant mon ma formation (BTS SIO option SLAM) j'ai developpé des competences dans divers languages de programmation mais aussi dans l'organisation et la conceptualisation du developpement. De plus la réalisation de projets personnels qui m'ont fait gagner en autonomie. Malgré mon attrait pour le <LinearGradientPurple label={"Front-End"} className={"font-semibold font-p"}/> j'apprecie énormement le <LinearGradientPurple label={"Back-End"} className={"font-semibold font-p"}/> et plus globalement le fait de developper une application de 0 en m'occupant de tout le projet. C'est pour cela que je souhaite devenir developpeur <LinearGradientPurple label={"Fullstack JS !"} className={"font-semibold font-p"}/> 
+                                            
                                         </motion.p>
                                     </motion.div>
                                 </motion.div>
 
                                 <motion.div className="absolute top-1 right-1">
-                                    <motion.button className="text-white-default flex p-1 cursor-pointer hover:bg-gray-800 hover:bg-opacity-50 rounded transition-all duration-200" onClick={toggleOpen}>
+                                    <motion.button className="text-white-default flex p-1 cursor-pointer hover:bg-red-600 hover:bg-opacity-80 rounded transition-all duration-200" onClick={toggleOpen}>
                                         <motion.i className="gg-close"></motion.i>
                                     </motion.button>
                                 </motion.div>

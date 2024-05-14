@@ -1,0 +1,17 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127 109" width="127" height="109">
+	<title>New Project</title>
+	<defs>
+		<image  width="800" height="800" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAMgAQMAAADhvpQrAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAS1JREFUeJztzUERAAAMAqDZv/Ra+PCgALmCSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKR7CQPIHEDIbMPz1oAAAAASUVORK5CYII="/>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-120,0,0,-105,122,54.5)">
+			<stop offset="0" stop-color="#e0aaff"/>
+			<stop offset=".213" stop-color="#e0aaff"/>
+			<stop offset=".747" stop-color="#9d4edd"/>
+			<stop offset="1" stop-color="#7b2cbf"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+	</style>
+	<use id="Background" style="display: none" href="#img1" x="-247" y="-287"/>
+	<path id="V" class="s0" aria-label="V"  d="m92.6 2l-29.1 68.4-28.5-68.4h-32.1l44.9 105h29.2l45-105z"/>
+</svg>
